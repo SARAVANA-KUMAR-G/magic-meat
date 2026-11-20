@@ -110,7 +110,6 @@ export default function App() {
         setActiveBranch(visibleBranches[0]);
       }
       // Direct sign-in navigation: Owner to Owner Dashboard, Branch to Branch Dashboard
-      navigate(data.role === 'owner' ? '/admin' : '/history');
     } catch (e) {
       console.warn('Error fetching profile:', e);
       setProfile(null);
